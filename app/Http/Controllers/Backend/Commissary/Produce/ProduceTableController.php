@@ -27,6 +27,6 @@ class ProduceTableController extends Controller
     		->addColumn('actions', function($product) {
     			return $product->action_buttons;
     		})
-    		->make();
+    		->make(true);
     }
 }
